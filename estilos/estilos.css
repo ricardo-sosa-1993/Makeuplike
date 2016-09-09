@@ -1,0 +1,404 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,700);
+			*{margin :0; padding:0;}
+			body{
+				min-width: 1000px;
+			}
+			header {
+
+				width: 100%;   /*posiciona el header a lo largo de toda la página*/ 
+				background: #ffc5d9;  /*color de fondo del header*/
+
+			}
+
+			.sesion{
+				width: 100%;
+				background: #ffc5d9;
+				display: block;
+				text-align: right;
+			}
+
+			.sesion a{
+				text-decoration: none;
+				font-family: 'Raleway', sans-serif;
+				font-weight: 500;
+				color: #666666;
+				font-size: 15px;
+				margin: 10px;
+			}
+
+			.sesion a:hover{
+				color: #ff4083;
+			}
+
+			.sesion a:hover img{
+				content: url("../imagenes/carrito_de_compras_hover.png");
+			}
+
+
+			
+
+			.logo{
+				display: block; /*tiene que poner para centrar el logo*/
+			    margin-right: auto;  /*centra el logo*/
+			    margin-left: auto;   /*centra el logo*/
+			}
+
+
+			.busqueda{
+				padding: 7px;  /*establece la altura de los elementos de búsqueda*/
+				float: right; /*posiciona los elementos del lado derecho*/  
+				margin-right: 100px;    /*establec el espaciado del lado derecho*/
+			}
+
+			nav{
+				list-style:none;  /*quita las viñetas a la lista (los elementos de la barra de navegación)*/
+				width:100%;  /*posiciona la barra de navegación a lo largo de toda página*/
+				height: 38px;  /*establece la altura de la barra de búsqueda*/
+				background-color: #ff4083;   /*color de fondo de la barra de navegación*/
+				}
+			nav li{
+				position:relative;
+				float: left;
+				background-color: #ff4083;
+				padding: 7px;
+				width:182px;
+				height: 24px;
+				text-align:center;
+				font-size: 15px;
+				font-family: 'Raleway', sans-serif;
+				font-weight: 700;
+				color: #ffffff;
+				display: block;
+			}
+
+			nav li:hover {
+				background:#ff8cb4;  /*cambia el fondo de la lista*/
+				
+			}
+
+
+
+			nav a {
+				display:block;    /*agrupa los elementos a por renglones*/
+				font-family: 'Raleway', sans-serif;  /*asigna tipo de letra*/
+				font-weight:700;  /*pone la letra en negrita*/
+				text-decoration:none; /*quita el subrayado a los links*/
+				height: 25px;
+				color: #ffffff;
+			}
+			nav ul {
+				position:absolute;
+				list-style:none; /*le quita las viñetas a la lista*/
+				box-shadow: 1px 1px 6px #888888;
+				visibility: hidden;
+				opacity:0;/*no muestra el menu*/
+			}
+			 nav ul li {
+				border-top:none;   /*quita borde de arriba*/
+				
+				
+			}
+			nav li:hover ul {
+				visibility: visible;
+				/*display: block;  /*muestra el muenú*/
+				-webkit-transition: opacity .5s;
+				-o-transition: opacity .5s;
+				transition: opacity .5s;
+				opacity: 1;
+				left:0px;/*Cambia posición inicial del menú*/
+				top:38px;/*Cambia posición inicial del menú*/
+				opacity: 1;
+				
+			}
+			
+			.inicio h1{
+				position: absolute;
+				width: 500px;
+				left: 700px;
+				top: 310px;
+				font-family: 'Raleway', sans-serif;
+				font-weight: 700;
+				color: #000000;
+				font-size: 45px;
+				text-shadow: 1px 1px 2px #888888;
+				z-index: -1;
+			}
+
+			.inicio .fondo{
+				width: 350px;
+				height: 500px;
+			}
+
+			.inicio .carrito{
+				position: absolute;
+				top: 270px;
+				left: 350px;
+				z-index: -1;
+			}
+
+			h1{
+				text-align: center;
+				font-family: 'Raleway', sans-serif;
+				font-weight: 700;
+				color: #ff4083;
+				font-size: 45px;
+				text-shadow: 1px 1px 2px #888888;
+				margin-top: 35px;
+			}
+
+			.contenedor {
+				width: 90%;
+				margin: 30px auto;
+				overflow: hidden;
+			}
+
+			.producto {
+				color: #000000;
+				font-family: 'Raleway', sans-serif;
+				font-size: 16px;
+				width: 20%;
+				display: inline-block;
+				margin:  2% 2% 5px 2%;
+				-webkit-transition: color 0.5s ease;
+			}
+
+			.producto h3 {
+				line-height: 1.2;
+			}
+
+			.producto h4{
+				line-height: 2;
+			}
+
+			.producto:hover {
+				color: #ff4083;
+			}
+
+			.producto img {
+				width: 120px;
+				height: 150px;
+				-webkit-border-radius: 5px;
+				-moz-border-radius: 5px;
+				border-radius: 5px;
+			}
+
+			.breadcrumb{
+				margin-left: 15px;
+				margin-top: 15px;
+			}
+			.breadcrumb li {
+			    display: inline;
+			    font-family: 'Raleway', sans-serif;
+				font-weight: 700;
+				color: #000000;
+				font-size: 15px;
+			
+			}
+			.breadcrumb a{
+				text-decoration: none;
+				color: #ff4083;
+			}
+			.breadcrumb a:hover{
+				color: #ff8cb4;
+			}
+			.breadcrumb li+li:before {
+			    content:">";
+			    margin: 10px;
+			}
+
+			.formulario{
+				font-family: 'Raleway', sans-serif;
+				font-weight: 400;
+				color: #ffffff;
+				font-size: 15px;
+				margin-left: auto;
+				margin-right: auto;
+				margin-bottom: 60px;
+				margin-top: 40px;
+				width: 290px;
+				padding: 10px;
+				background: #ff4083;
+				border-radius: 7px; 
+				border: 2px solid #000000;
+				box-shadow: 2px 2px 2px #888888;
+			}
+
+			.formulario h1{
+				text-align: center;
+				font-family: 'Raleway', sans-serif;
+				font-weight: 400;
+				color: #ffffff;
+				font-size: 35px;
+				text-shadow: 1px 1px 2px #888888;
+			}
+
+			.formulario table{
+				margin-right: auto;
+				margin-left: auto;
+				margin-top: 15px;
+			}
+
+			.formulario input{
+				border: 1px solid #ccc;
+    			border-radius: 4px;
+    			font-family: 'Raleway', sans-serif;
+				font-weight: 700;
+				color: #000000;
+				font-size: 15px;
+				padding: 5px;
+
+			}
+			.formulario input[type=submit]{
+				float: right;
+				font-family: 'Raleway', sans-serif;
+				font-weight: 400;
+				margin-top: 10px;
+				color: #ffffff;
+				background: #222222;
+			}
+			.formulario input[type=file]{
+				border: 1px solid #ccc;
+    			border-radius: 4px;
+    			font-family: 'Raleway', sans-serif;
+				font-weight: 700;
+				color: #000000;
+				font-size: 12px;
+				padding: 5px;
+				width: 270px;
+			}
+
+			.formulario input[type=submit]:hover{
+				background: #666666;
+			}
+
+			.descripcion_producto{
+				border: 2px solid #000000;
+				border-radius: 7px;
+				margin-top: 30px;
+				width: 800px;
+				margin-left: auto;
+				margin-right: auto;
+				overflow: hidden;
+				margin-bottom: 100px;
+				box-shadow: 2px 2px 2px #888888;
+				background: #ffc5d9;
+			}
+
+
+			.descripcion_producto p{
+			
+				width: 100%;
+				margin-bottom: 30px;
+				color: #000000;
+				font-family: 'Raleway', sans-serif;
+				font-weight: 400;
+				font-size: 18px;
+
+			}
+
+			.descripcion_producto h1{
+				width: 100%;
+			}
+
+			.descripcion_producto img{
+				margin-left: 80px;
+				margin-top: 30px;
+				width: 280px;
+				height: 300px;
+				margin-bottom: 30px;
+				border-radius: 7px;
+				border: 2px solid #000000;
+				box-shadow: 2px 2px 2px #888888;
+				background: #ffffff;
+				
+			}
+
+			.descripcion_producto .detalle{
+				float: right;
+				margin-right: 100px;
+				margin-top: 30px;
+				width: 280px;
+			}
+
+
+			.descripcion_producto button{
+				float: left;
+				width: 100%;
+				float: right;
+				font-family: 'Raleway', sans-serif;
+				font-size: 15px
+				font-weight: 400;
+				margin-top: 10px;
+				margin-bottom: 10px;
+				padding: 5px;
+				color: #ffffff;
+				background: #ff4083;
+				border: 1px solid #ccc;
+    			border-radius: 4px;
+			}
+			.descripcion_producto button:hover{
+				background: #ff669b;
+			}
+
+			.descripcion_producto input[type=number]{
+				width: 50px;
+				margin-left: 10px;
+			}
+
+			.descripcion_producto h3{
+				margin-top: 10px;
+				text-align: center;
+				font-family: 'Raleway', sans-serif;
+				font-weight: 400;
+				color: #ff4083;
+				font-size: 20px;
+				text-shadow: 1px 1px 2px #888888;
+			}
+
+			.tabla{
+				margin-top: 30px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+			.tabla table{
+				margin-top: 50px;
+				font-family: 'Raleway', sans-serif;
+				font-size: 15px
+				color: #ffffff;
+				border-collapse: collapse;
+    			margin: 0 auto;
+			}
+
+
+			.tabla table th{
+				background: #000000;
+				color: #ffffff;
+				padding: 5px;
+			}
+
+			.tabla td, th {
+  				border: 1px solid #999;
+  				padding: 0.5rem;
+  				text-align: left;
+			}
+
+			.tabla button{
+				width: 100px;
+				font-family: 'Raleway', sans-serif;
+				font-size: 15px
+				font-weight: 400;
+				margin-top: 10px;
+				margin-bottom: 10px;
+				padding: 5px;
+				color: #ffffff;
+				background: #000000;
+				border: 1px solid #ccc;
+    			border-radius: 4px;
+			}
+
+			.tabla button:hover{
+				background: #222222;
+			}
+
+			
